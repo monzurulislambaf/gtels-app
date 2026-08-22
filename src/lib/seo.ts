@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const siteUrl = "https://gtels.com";
+const siteUrl = "https://gtels-bd.com";
 const siteName = "GTELS";
 const defaultImage = "/images/og-default.jpg";
 

@@ -7,7 +7,7 @@ export const company = {
   phone: "+88 01678614488",
   email: "contact@gtels-bd.com",
   address: "623, West Nakhalpara, Tejgaon, Dhaka-1215",
-  website: "https://gtels.com",
+  website: "https://gtels-bd.com",
   social: {} as Record<string, string>,
   vision:
     "To be a nationally recognized engineering, WASH, and logistics partner delivering reliable, quality-driven infrastructure solutions that improve lives and communities across Bangladesh.",

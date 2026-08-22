@@ -8,8 +8,8 @@ export function OrganizationSchema({ page }: OrganizationSchemaProps) {
     "@type": "Organization",
     name: "GlobalTech Engineering & Logistic Solutions",
     alternateName: "GTELS",
-    url: "https://gtels.com",
-    logo: "https://gtels.com/images/logos/gtels-logo.png",
+    url: "https://gtels-bd.com",
+    logo: "https://gtels-bd.com/images/logos/gtels-logo.png",
     description:
       "GTELS delivers integrated engineering works, WASH infrastructure, logistics, procurement, technology installation and community-development support across Bangladesh.",
     address: {
@@ -64,13 +64,13 @@ export function WebPageSchema({ title, description, path }: WebPageSchemaProps) 
     "@type": "WebPage",
     name: title,
     description,
-    url: `https://gtels.com${path}`,
+    url: `https://gtels-bd.com${path}`,
     publisher: {
       "@type": "Organization",
       name: "GTELS",
       logo: {
         "@type": "ImageObject",
-        url: "https://gtels.com/images/logos/gtels-logo.png",
+        url: "https://gtels-bd.com/images/logos/gtels-logo.png",
       },
     },
   };
@@ -95,7 +95,7 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
       "@type": "ListItem",
       position: i + 1,
       name: item.name,
-      item: `https://gtels.com${item.url}`,
+      item: `https://gtels-bd.com${item.url}`,
     })),
   };
 
@@ -136,7 +136,7 @@ export function ProjectSchema({
       name: "GTELS",
     },
     datePublished,
-    url: `https://gtels.com${path}`,
+    url: `https://gtels-bd.com${path}`,
     about: {
       "@type": "Organization",
       name: client,

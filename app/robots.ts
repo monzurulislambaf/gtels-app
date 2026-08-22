@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://gtels.com/sitemap.xml",
+    sitemap: "https://gtels-bd.com/sitemap.xml",
   };
 }

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { projects } from "@/src/data/projects";
 
-const BASE_URL = "https://gtels.com";
+const BASE_URL = "https://gtels-bd.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: { path: string; priority: number; changeFrequency: "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never" }[] = [
