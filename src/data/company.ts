@@ -5,7 +5,7 @@ export const company = {
   description:
     "GTELS delivers integrated engineering works, WASH infrastructure, logistics, procurement, technology installation and community-development support across Bangladesh.",
   phone: "+88 01678614488",
-  email: "globaltechess@gmail.com",
+  email: "contact@gtels-bd.com",
   address: "623, West Nakhalpara, Tejgaon, Dhaka-1215",
   website: "https://gtels.com",
   social: {} as Record<string, string>,

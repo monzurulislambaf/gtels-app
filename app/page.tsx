@@ -9,6 +9,7 @@ import NationalCoverage from "@/components/home/NationalCoverage";
 import EquipmentLogistics from "@/components/home/EquipmentLogistics";
 import TeamPreview from "@/components/home/TeamPreview";
 import QualityHSE from "@/components/home/QualityHSE";
+import Testimonials from "@/components/home/Testimonials";
 import GalleryPreview from "@/components/home/GalleryPreview";
 
 export default function HomePage() {
@@ -25,6 +26,7 @@ export default function HomePage() {
       <EquipmentLogistics />
       <TeamPreview />
       <QualityHSE />
+      <Testimonials />
       <GalleryPreview />
     </>
   );

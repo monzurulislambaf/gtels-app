@@ -87,7 +87,7 @@ export default function FinancialContent() {
                 documents are available to qualified parties upon request during tendering processes.
               </p>
               <p className="text-sm text-base-content/50 mt-4 italic">
-                Contact GTELS for detailed financial documentation: {process.env.NEXT_PUBLIC_CONTACT_EMAIL || "globaltechess@gmail.com"}
+                Contact GTELS for detailed financial documentation: {process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@gtels-bd.com"}
               </p>
             </div>
           </ScrollReveal>

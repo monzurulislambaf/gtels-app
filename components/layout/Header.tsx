@@ -7,6 +7,7 @@ import { company } from "@/src/data/company";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 
 const navLinks = [
+  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "WASH", href: "/wash" },
