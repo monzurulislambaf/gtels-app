@@ -16,8 +16,8 @@ export default function CapacityContent() {
       <section className="relative bg-neutral text-neutral-content py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://picsum.photos/seed/gtels-capacity/1920/600"
-            alt="GTELS national coverage"
+            src="/images/hero-capacity.jpg"
+            alt="GTELS transport fleet at logistics yard"
             className="w-full h-full object-cover opacity-20"
           />
         </div>
@@ -34,7 +34,7 @@ export default function CapacityContent() {
               National <span className="text-primary">Capacity</span>
             </h1>
             <p className="text-lg text-neutral-content/70 max-w-2xl">
-              Bangladesh-wide implementation capability with 8 zonal offices, 18 sub-offices, and 55,000+ sq. ft. warehouse capacity.
+              Bangladesh-wide implementation capability with 8 field offices, 18 sub-offices, and 30,000+ sq. ft. warehouse capacity.
             </p>
           </motion.div>
         </div>
@@ -43,12 +43,11 @@ export default function CapacityContent() {
       {/* Key Stats */}
       <section className="py-12 bg-base-200 border-b border-base-300">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
-              { value: 55000, suffix: "+", label: "Sq. Ft. Warehouse" },
-              { value: 8, suffix: "", label: "Zonal Offices" },
-              { value: 18, suffix: "", label: "Sub-Offices" },
-              { value: 241, suffix: "+", label: "Personnel" },
+              { value: 30000, suffix: "+", label: "Sq. Ft. Warehouse" },
+              { value: 8, suffix: "", label: "Field Offices" },
+              { value: 100, suffix: "+", label: "Personnel" },
             ].map((stat, i) => (
               <ScrollReveal key={stat.label} delay={i * 0.08}>
                 <div className="text-center p-4">
@@ -67,7 +66,7 @@ export default function CapacityContent() {
           <SectionHeading
             eyebrow="Warehouse Zones"
             title="Nationwide Warehousing Network"
-            description="55,000+ sq. ft. total capacity across 8 strategically located warehouse zones."
+            description="30,000+ sq. ft. total capacity across 8 strategically located warehouse zones."
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {zones.map((zone, i) => (
@@ -83,7 +82,7 @@ export default function CapacityContent() {
                       <span className="text-base-content/60">Offices:</span>
                       <span className="font-medium">{zone.offices}</span>
                     </div>
-                    <div className="pt-2 border-t border-base-300/50">
+                    <div className="pt-2 border-t border-base-300">
                       <span className="text-primary text-xs font-medium">{zone.coverage}</span>
                     </div>
                   </div>
@@ -119,7 +118,7 @@ export default function CapacityContent() {
                         office.type === "head-office" ? "badge-primary" :
                         office.type === "zonal" ? "badge-info" : "badge-ghost"
                       }`}>
-                        {office.type.replace("-", " ")}
+                        {office.type === "head-office" ? "Head Office" : office.type === "zonal" ? "Field Office" : "Sub-Office"}
                       </span>
                     </td>
                     <td className="text-sm text-base-content/70">{office.address}</td>

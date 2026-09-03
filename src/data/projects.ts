@@ -2,6 +2,7 @@ export interface Project {
   id: string;
   slug: string;
   title: string;
+  image: string;
   client: string;
   year: number;
   contractValue?: string;
@@ -19,6 +20,7 @@ export const projects: Project[] = [
     id: "p1",
     slug: "120-deep-tubewells-iom-2023",
     title: "120 Deep Tubewells",
+    image: "/images/projects/p1.jpg",
     client: "IOM (International Organization for Migration)",
     year: 2023,
     contractValue: "BDT 48.5M",
@@ -41,6 +43,7 @@ export const projects: Project[] = [
     id: "p2",
     slug: "30-hand-tube-wells-world-vision-2023",
     title: "30 Hand Tube Wells",
+    image: "/images/projects/p2.jpg",
     client: "World Vision Bangladesh",
     year: 2023,
     projectType: "WASH Infrastructure",
@@ -61,6 +64,7 @@ export const projects: Project[] = [
     id: "p3",
     slug: "3-dewats-iom-2024",
     title: "3 DEWATS Facilities",
+    image: "/images/projects/p3.jpg",
     client: "IOM (International Organization for Migration)",
     year: 2024,
     projectType: "WASH Infrastructure",
@@ -81,6 +85,7 @@ export const projects: Project[] = [
     id: "p4",
     slug: "integrated-wash-package-iom-2025",
     title: "Integrated WASH Package",
+    image: "/images/projects/p4.jpg",
     client: "IOM (International Organization for Migration)",
     year: 2025,
     projectType: "WASH Infrastructure",
@@ -101,6 +106,7 @@ export const projects: Project[] = [
     id: "p5",
     slug: "20-solar-deep-tube-wells-dam-2026",
     title: "20 Solar Deep Tube Wells",
+    image: "/images/projects/p5.jpg",
     client: "Dhaka Ahsania Mission",
     year: 2026,
     projectType: "Solar WASH",
@@ -121,6 +127,7 @@ export const projects: Project[] = [
     id: "p6",
     slug: "quality-wash-services-ngoforum-2025",
     title: "Quality WASH Services",
+    image: "/images/projects/p6.jpg",
     client: "NGO Forum for Public Health",
     year: 2025,
     projectType: "WASH Infrastructure",
@@ -141,6 +148,7 @@ export const projects: Project[] = [
     id: "p7",
     slug: "solar-powered-water-supply-ngoforum-2025",
     title: "Solar-Powered Water Supply Improvement",
+    image: "/images/projects/p7.jpg",
     client: "NGO Forum for Public Health",
     year: 2025,
     projectType: "Solar WASH",
@@ -161,6 +169,7 @@ export const projects: Project[] = [
     id: "p8",
     slug: "communal-drinking-water-solidarites-2022",
     title: "Communal Drinking-Water Treatment Facilities",
+    image: "/images/projects/p8.jpg",
     client: "Solidarites International",
     year: 2022,
     projectType: "Water Treatment",
@@ -180,7 +189,7 @@ export const projects: Project[] = [
 ];
 
 export const projectStats = {
-  totalValue: "BDT 112.18M",
+  totalValue: "BDT 180+",
   totalProjects: 8,
   deepTubewells: 150,
   handTubewells: 30,

@@ -22,10 +22,10 @@ export default function ProjectPreview() {
           {featured.map((project, i) => (
             <ScrollReveal key={project.id} delay={i * 0.1}>
               <Link href={`/projects/${project.slug}`} className="block h-full">
-                <div className="card bg-base-100 shadow-sm border border-base-300/50 card-hover h-full group">
+                <div className="card bg-base-100 shadow-sm border border-base-300 card-hover h-full group">
                   <figure className="relative h-44 overflow-hidden">
                     <img
-                      src={`https://picsum.photos/seed/gtels-proj-${project.id}/400/250`}
+                      src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />

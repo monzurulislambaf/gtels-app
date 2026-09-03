@@ -39,7 +39,7 @@ export default function WashContent() {
       <section className="relative bg-neutral text-neutral-content py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://picsum.photos/seed/gtels-wash-hero/1920/600"
+            src="/images/hero-wash.jpg"
             alt="GTELS WASH infrastructure project"
             className="w-full h-full object-cover opacity-20"
           />
@@ -74,8 +74,8 @@ export default function WashContent() {
             {capabilities.map((cap, i) => (
               <ScrollReveal key={cap.title} delay={i * 0.08}>
                 <div className="bg-base-200 rounded-xl p-6 card-hover h-full">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <span className="text-sm font-bold text-primary">{i + 1}</span>
+                  <div className="w-10 h-10 rounded-lg bg-primary text-primary-content flex items-center justify-center mb-3">
+                    <span className="text-sm font-bold">{i + 1}</span>
                   </div>
                   <h3 className="font-semibold text-sm mb-2">{cap.title}</h3>
                   <p className="text-xs text-base-content/60 leading-relaxed">{cap.desc}</p>
@@ -104,7 +104,7 @@ export default function WashContent() {
                         {i + 1}
                       </div>
                       {i < processSteps.length - 1 && (
-                        <div className="w-0.5 flex-1 bg-primary/20 mt-2" />
+                        <div className="w-0.5 flex-1 bg-primary mt-2" />
                       )}
                     </div>
                     <div className="pt-2">
@@ -134,7 +134,7 @@ export default function WashContent() {
               { title: "Permits & Coordination", desc: "Drilling/groundwater permits and coordination with relevant authorities." },
             ].map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.1}>
-                <div className="card bg-base-200 border border-base-300/50 h-full">
+                <div className="card bg-base-200 border border-base-300 h-full">
                   <div className="card-body p-6">
                     <h3 className="card-title text-base">{item.title}</h3>
                     <p className="text-sm text-base-content/60">{item.desc}</p>

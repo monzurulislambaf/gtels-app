@@ -28,7 +28,7 @@ export default function ValuesSection() {
             const Icon = icons[i];
             return (
               <ScrollReveal key={value.title} delay={i * 0.08}>
-                <div className="bg-base-100 rounded-xl p-6 border border-base-300/50 card-hover h-full">
+                <div className="bg-base-100 rounded-xl p-6 border border-base-300 card-hover h-full">
                   <Icon className="w-8 h-8 text-primary mb-3" />
                   <h3 className="font-semibold text-base mb-2">{value.title}</h3>
                   <p className="text-sm text-base-content/60">{value.description}</p>

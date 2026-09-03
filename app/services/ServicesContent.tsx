@@ -14,7 +14,7 @@ export default function ServicesContent() {
       <section className="relative bg-neutral text-neutral-content py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://picsum.photos/seed/gtels-services-hero/1920/600"
+            src="/images/hero-services.jpg"
             alt="GTELS engineering services"
             className="w-full h-full object-cover opacity-20"
           />
@@ -52,8 +52,8 @@ export default function ServicesContent() {
               <div className={`grid lg:grid-cols-2 gap-12 items-center ${!isEven ? "lg:direction-rtl" : ""}`}>
                 <ScrollReveal direction={isEven ? "left" : "right"}>
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-primary" />
+                    <div className="w-12 h-12 rounded-xl bg-primary text-primary-content flex items-center justify-center">
+                      <Icon className="w-6 h-6" />
                     </div>
                     <span className="text-xs font-semibold uppercase tracking-wider text-primary">
                       Service {String(i + 1).padStart(2, "0")}

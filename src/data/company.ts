@@ -1,5 +1,6 @@
 export const company = {
   name: "GlobalTech Engineering & Logistic Solutions",
+  shortName: "GlobalTech",
   acronym: "GTELS",
   tagline: "Engineering Solutions for Water, Infrastructure & Sustainable Development",
   description:
@@ -40,13 +41,12 @@ export const company = {
     },
   ],
   stats: [
-    { value: 55000, suffix: "+", label: "Sq. Ft. Warehouse Capacity", description: "Across 8 zones nationwide" },
-    { value: 8, suffix: "", label: "Zonal Offices", description: "Covering all major divisions" },
-    { value: 18, suffix: "", label: "Sub-Offices", description: "Local implementation reach" },
-    { value: 241, suffix: "+", label: "Deployment Personnel", description: "Skilled technical workforce" },
+    { value: 30000, suffix: "+", label: "Sq. Ft. Warehouse Capacity", description: "Across 8 zones nationwide" },
+    { value: 8, suffix: "", label: "Field Offices", description: "Covering all major divisions" },
+    { value: 100, suffix: "+", label: "Deployment Personnel", description: "Skilled technical workforce" },
     { value: 24, suffix: "", label: "Equipment Categories", description: "Comprehensive fleet & tools" },
-    { value: 112, suffix: ".18M", label: "BDT Project Value", description: "Implemented in last 4 years" },
-    { value: 190, suffix: "+", label: "Recent Tube Wells", description: "Deep & hand tubewell projects" },
+    { value: 180, suffix: "+", label: "BDT Project Value", description: "Implemented in last 4 years" },
+    { value: 1000, suffix: "+", label: "Recent Tube Wells", description: "Deep & hand tubewell projects" },
   ],
   edge: [
     {
@@ -63,11 +63,11 @@ export const company = {
     },
     {
       title: "Logistics Strength",
-      description: "55,000+ sq. ft. stated warehouse capacity.",
+      description: "30,000+ sq. ft. stated warehouse capacity.",
     },
     {
       title: "Technical Workforce",
-      description: "Approx. 241 personnel deployment capacity.",
+      description: "Approx. 100 personnel deployment capacity.",
     },
     {
       title: "Relevant WASH Experience",

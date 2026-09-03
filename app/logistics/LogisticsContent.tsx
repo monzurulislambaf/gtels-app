@@ -9,7 +9,7 @@ import { Truck, Warehouse, Package, Clock } from "lucide-react";
 
 const capabilities = [
   { icon: Truck, title: "Fleet Management", desc: "Comprehensive vehicle fleet for multi-site deployment." },
-  { icon: Warehouse, title: "Warehousing", desc: "55,000+ sq. ft. across 8 zones for storage and inventory." },
+  { icon: Warehouse, title: "Warehousing", desc: "30,000+ sq. ft. across 8 zones for storage and inventory." },
   { icon: Package, title: "Procurement", desc: "End-to-end sourcing, purchasing, and supply chain." },
   { icon: Clock, title: "Emergency Response", desc: "Rapid deployment for time-critical deliveries." },
 ];

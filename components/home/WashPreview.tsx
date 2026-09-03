@@ -70,7 +70,7 @@ export default function WashPreview() {
                         {i + 1}
                       </div>
                       {i < processSteps.length - 1 && (
-                        <div className="w-px h-8 bg-primary/20" />
+                        <div className="w-px h-8 bg-primary" />
                       )}
                     </div>
                     <div className="pt-1">

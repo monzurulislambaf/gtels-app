@@ -17,12 +17,12 @@ export default function TeamPreview() {
               eyebrow="Our Team"
               title="Technical Workforce"
               align="left"
-              description="Approximately 241 skilled personnel ready for nationwide deployment across engineering, WASH, logistics, and construction."
+              description="Approximately 100 skilled personnel ready for nationwide deployment across engineering, WASH, logistics, and construction."
             />
 
             <div className="grid grid-cols-3 gap-4 mb-8">
               <div className="text-center p-4 bg-base-200 rounded-xl">
-                <AnimatedCounter value={241} className="text-3xl font-bold text-primary" />
+                <AnimatedCounter value={100} className="text-3xl font-bold text-primary" />
                 <div className="text-xs text-base-content/60 mt-1">Total Personnel</div>
               </div>
               <div className="text-center p-4 bg-base-200 rounded-xl">
@@ -49,7 +49,7 @@ export default function TeamPreview() {
               </h3>
               <div className="space-y-2">
                 {teamStructure.workforce.map((item) => (
-                  <div key={item.category} className="flex items-center justify-between text-sm py-1.5 border-b border-base-300/50 last:border-0">
+                  <div key={item.category} className="flex items-center justify-between text-sm py-1.5 border-b border-base-300 last:border-0">
                     <span className="text-base-content/70">{item.category}</span>
                     <div className="flex items-center gap-2">
                       <div className="w-24 h-1.5 bg-base-300 rounded-full overflow-hidden">

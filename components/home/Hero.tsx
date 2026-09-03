@@ -12,7 +12,7 @@ export default function Hero() {
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://picsum.photos/seed/gtels-hero-drill/1920/1080"
+          src="/images/hero-home.jpg"
           alt="GTELS deep tubewell drilling operation"
           className="w-full h-full object-cover"
         />
@@ -20,8 +20,6 @@ export default function Hero() {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-10 w-56 h-56 bg-accent/10 rounded-full blur-3xl" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-20 lg:py-32 w-full">
@@ -88,9 +86,9 @@ export default function Hero() {
             className="mt-16 grid grid-cols-3 gap-6 max-w-lg"
           >
             {[
-              { icon: Droplets, value: "190+", label: "Tube Wells" },
-              { icon: Building2, value: "8", label: "Zonal Offices" },
-              { icon: Truck, value: "55K+", label: "Sq. Ft. Warehouse" },
+              { icon: Droplets, value: "1000+", label: "Tube Wells" },
+              { icon: Building2, value: "8", label: "Field Offices" },
+              { icon: Truck, value: "30K+", label: "Sq. Ft. Warehouse" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <stat.icon className="w-5 h-5 text-accent mx-auto mb-1" />

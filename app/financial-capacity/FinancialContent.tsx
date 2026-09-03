@@ -79,7 +79,7 @@ export default function FinancialContent() {
       <section className="py-16 bg-base-200">
         <div className="max-w-4xl mx-auto px-4">
           <ScrollReveal>
-            <div className="bg-base-100 rounded-2xl p-8 border border-base-300/50">
+            <div className="bg-base-100 rounded-2xl p-8 border border-base-300">
               <h3 className="font-semibold text-lg mb-3">Restricted Information</h3>
               <p className="text-sm text-base-content/60 leading-relaxed">
                 Sensitive financial details including bank account numbers, SWIFT codes, detailed insurance

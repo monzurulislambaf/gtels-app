@@ -17,7 +17,7 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
       <section className="relative bg-neutral text-neutral-content py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={`https://picsum.photos/seed/gtels-pd-${project.id}/1920/600`}
+            src={project.image}
             alt={project.title}
             className="w-full h-full object-cover opacity-20"
           />

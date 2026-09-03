@@ -61,7 +61,7 @@ export default function Header() {
       <header
         className={`sticky top-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-base-100/95 backdrop-blur-md shadow-md border-b border-base-300"
+            ? "bg-base-100 shadow-md border-b border-base-300"
             : "bg-base-100"
         }`}
       >
@@ -69,12 +69,12 @@ export default function Header() {
           <div className="navbar min-h-16 lg:min-h-20 px-0">
             {/* Logo */}
             <div className="navbar-start">
-              <Link href="/" className="flex items-center gap-2 group" onClick={() => setMobileOpen(false)}>
-                <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-lg bg-primary flex items-center justify-center text-primary-content font-bold text-lg lg:text-xl transition-transform group-hover:scale-105">
-                  G
+              <Link href="/" className="flex items-center gap-2.5 group" onClick={() => setMobileOpen(false)}>
+                <div className="h-10 lg:h-12 px-2 rounded-lg bg-primary flex items-center justify-center text-primary-content font-extrabold text-[10px] lg:text-xs tracking-tight transition-transform duration-300 group-hover:scale-105">
+                  {company.acronym}
                 </div>
                 <div className="hidden sm:block">
-                  <div className="font-bold text-base lg:text-lg text-base-content leading-tight">{company.acronym}</div>
+                  <div className="font-bold text-base lg:text-lg text-base-content leading-tight">{company.shortName}</div>
                   <div className="text-[10px] lg:text-xs text-base-content/60 leading-tight hidden md:block">Engineering & Logistic Solutions</div>
                 </div>
               </Link>
@@ -137,7 +137,7 @@ export default function Header() {
         >
           <div className="flex flex-col h-full">
             <div className="flex items-center justify-between p-4 border-b border-base-300">
-              <span className="font-bold text-lg">{company.acronym}</span>
+              <span className="font-bold text-lg">{company.shortName}</span>
               <button
                 className="btn btn-ghost btn-circle btn-sm"
                 onClick={() => setMobileOpen(false)}

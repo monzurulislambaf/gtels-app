@@ -21,8 +21,8 @@ export default function ContactContent() {
       <section className="relative bg-neutral text-neutral-content py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://picsum.photos/seed/gtels-contact/1920/600"
-            alt="GTELS office"
+            src="/images/hero-contact.jpg"
+            alt="GTELS project site with community members"
             className="w-full h-full object-cover opacity-20"
           />
         </div>
@@ -54,8 +54,8 @@ export default function ContactContent() {
               <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5 text-primary" />
+                  <div className="w-10 h-10 rounded-lg bg-primary text-primary-content flex items-center justify-center shrink-0">
+                    <MapPin className="w-5 h-5" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-sm mb-1">Address</h3>
@@ -63,8 +63,8 @@ export default function ContactContent() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5 text-primary" />
+                  <div className="w-10 h-10 rounded-lg bg-primary text-primary-content flex items-center justify-center shrink-0">
+                    <Phone className="w-5 h-5" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-sm mb-1">Phone</h3>
@@ -74,8 +74,8 @@ export default function ContactContent() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                    <Mail className="w-5 h-5 text-primary" />
+                  <div className="w-10 h-10 rounded-lg bg-primary text-primary-content flex items-center justify-center shrink-0">
+                    <Mail className="w-5 h-5" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-sm mb-1">Email</h3>

@@ -9,8 +9,7 @@ export default function AboutHero() {
     <section className="relative bg-neutral text-neutral-content py-20 lg:py-28 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="https://picsum.photos/seed/gtels-about-hero/1920/600"
-          alt="GTELS engineering operations"
+          src="/images/hero-about.jpg"            alt="GTELS team with community members at a tubewell commissioning"
           className="w-full h-full object-cover opacity-20"
         />
       </div>

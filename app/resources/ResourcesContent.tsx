@@ -47,8 +47,8 @@ export default function ResourcesContent() {
               <ScrollReveal key={resource.title} delay={i * 0.06}>
                 <div className="bg-base-200 rounded-xl p-6 flex items-center justify-between card-hover">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <FileText className="w-6 h-6 text-primary" />
+                    <div className="w-12 h-12 rounded-lg bg-primary text-primary-content flex items-center justify-center">
+                      <FileText className="w-6 h-6" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-base">{resource.title}</h3>

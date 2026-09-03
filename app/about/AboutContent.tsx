@@ -55,7 +55,7 @@ export default function AboutContent() {
               "Last-Mile Delivery",
             ].map((area, i) => (
               <ScrollReveal key={area} delay={i * 0.05}>
-                <div className="bg-base-100 rounded-xl p-5 border border-base-300/50 text-sm font-medium text-base-content/80 card-hover">
+                <div className="bg-base-100 rounded-xl p-5 border border-base-300 text-sm font-medium text-base-content/80 card-hover">
                   {area}
                 </div>
               </ScrollReveal>
@@ -71,12 +71,11 @@ export default function AboutContent() {
             eyebrow="By the Numbers"
             title="GTELS at a Glance"
           />
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
-              { value: 241, suffix: "+", label: "Personnel" },
-              { value: 8, suffix: "", label: "Zonal Offices" },
-              { value: 18, suffix: "", label: "Sub-Offices" },
-              { value: 55000, suffix: "+", label: "Sq. Ft. Warehouse" },
+              { value: 100, suffix: "+", label: "Personnel" },
+              { value: 8, suffix: "", label: "Field Offices" },
+              { value: 30000, suffix: "+", label: "Sq. Ft. Warehouse" },
             ].map((stat, i) => (
               <ScrollReveal key={stat.label} delay={i * 0.1}>
                 <div className="text-center p-6 bg-base-200 rounded-xl">
@@ -105,12 +104,12 @@ export default function AboutContent() {
               </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {teamStructure.departments.map((dept) => (
-                  <div key={dept.name} className="bg-base-100 rounded-xl p-5 border border-base-300/50">
+                  <div key={dept.name} className="bg-base-100 rounded-xl p-5 border border-base-300">
                     <h3 className="font-semibold text-sm mb-3 text-primary">{dept.name}</h3>
                     <ul className="space-y-1">
                       {dept.roles.map((role) => (
                         <li key={role} className="text-xs text-base-content/60 flex items-center gap-2">
-                          <div className="w-1 h-1 rounded-full bg-primary/40" />
+                          <div className="w-1 h-1 rounded-full bg-primary" />
                           {role}
                         </li>
                       ))}

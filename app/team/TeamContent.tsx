@@ -26,7 +26,7 @@ export default function TeamContent() {
               Our <span className="text-primary">Team</span>
             </h1>
             <p className="text-lg text-neutral-content/70 max-w-2xl">
-              Approximately 241 skilled personnel across corporate, engineering, technical, and field operations.
+              Approximately 100 skilled personnel across corporate, engineering, technical, and field operations.
             </p>
           </motion.div>
         </div>
@@ -37,7 +37,7 @@ export default function TeamContent() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-3 gap-6">
             {[
-              { icon: Users, value: 241, label: "Total Personnel" },
+              { icon: Users, value: 100, label: "Total Personnel" },
               { icon: UserCog, value: 15, label: "Corporate Staff" },
               { icon: Layers, value: 8, label: "Departments/Zones" },
             ].map((stat, i) => {
@@ -103,12 +103,12 @@ export default function TeamContent() {
               </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {teamStructure.departments.map((dept) => (
-                  <div key={dept.name} className="bg-base-100 rounded-xl p-6 border border-base-300/50 card-hover">
+                  <div key={dept.name} className="bg-base-100 rounded-xl p-6 border border-base-300 card-hover">
                     <h3 className="font-semibold text-base mb-3 text-primary">{dept.name}</h3>
                     <ul className="space-y-2">
                       {dept.roles.map((role) => (
                         <li key={role} className="text-sm text-base-content/70 flex items-center gap-2">
-                          <div className="w-1.5 h-1.5 rounded-full bg-primary/40" />
+                          <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                           {role}
                         </li>
                       ))}
@@ -132,7 +132,7 @@ export default function TeamContent() {
             {teamStructure.centralTeam.map((role, i) => (
               <ScrollReveal key={role} delay={i * 0.05}>
                 <div className="bg-base-200 rounded-xl p-4 flex items-center gap-3 card-hover">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm">
+                  <div className="w-10 h-10 rounded-full bg-primary text-primary-content flex items-center justify-center font-semibold text-sm">
                     {role.charAt(0)}
                   </div>
                   <span className="text-sm font-medium">{role}</span>
@@ -159,7 +159,7 @@ export default function TeamContent() {
                       {i + 1}
                     </div>
                     {i < teamStructure.washImplementation.length - 1 && (
-                      <div className="w-0.5 h-8 bg-primary/20 mt-1" />
+                      <div className="w-0.5 h-8 bg-primary mt-1" />
                     )}
                   </div>
                   <div className="pt-1">

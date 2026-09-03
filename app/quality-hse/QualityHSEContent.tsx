@@ -11,24 +11,24 @@ const certCards = [
     title: "ISO 9001:2015",
     subtitle: "Quality Management",
     status: "On Process",
-    color: "text-primary",
-    bg: "bg-primary/10",
+    color: "text-primary-content",
+    bg: "bg-primary",
   },
   {
     icon: Leaf,
     title: "ISO 14001:2015",
     subtitle: "Environmental Management",
     status: "On Process",
-    color: "text-accent",
-    bg: "bg-accent/10",
+    color: "text-accent-content",
+    bg: "bg-accent",
   },
   {
     icon: HeartPulse,
     title: "OHSAS 18001:2007",
     subtitle: "Occupational Health & Safety",
     status: "On Process",
-    color: "text-secondary",
-    bg: "bg-secondary/10",
+    color: "text-secondary-content",
+    bg: "bg-secondary",
   },
 ];
 
@@ -112,7 +112,7 @@ export default function QualityHSEContent() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {policies.map((policy, i) => (
               <ScrollReveal key={policy} delay={i * 0.05}>
-                <div className="flex items-start gap-3 bg-base-100 rounded-xl p-5 border border-base-300/50 card-hover">
+                <div className="flex items-start gap-3 bg-base-100 rounded-xl p-5 border border-base-300 card-hover">
                   <ShieldCheck className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                   <span className="text-sm text-base-content/70">{policy}</span>
                 </div>

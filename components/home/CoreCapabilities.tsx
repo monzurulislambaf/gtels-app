@@ -19,10 +19,10 @@ export default function CoreCapabilities() {
             const Icon = service.icon;
             return (
               <ScrollReveal key={service.id} delay={i * 0.1}>
-                <div className="card bg-base-100 shadow-sm border border-base-300/50 card-hover h-full">
+                <div className="card bg-base-100 shadow-sm border border-base-300 card-hover h-full">
                   <div className="card-body p-6 lg:p-8">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                      <Icon className="w-6 h-6 text-primary" />
+                    <div className="w-12 h-12 rounded-xl bg-primary text-primary-content flex items-center justify-center mb-4">
+                      <Icon className="w-6 h-6" />
                     </div>
                     <h3 className="card-title text-lg">{service.title}</h3>
                     <p className="text-sm text-base-content/60 leading-relaxed mt-1">

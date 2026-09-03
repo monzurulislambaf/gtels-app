@@ -60,7 +60,7 @@ export const teamStructure = {
     { category: "Drivers/Transport Operators", count: 17 },
     { category: "Skilled/General Labour", count: 93 },
   ],
-  totalDeployment: 241,
+  totalDeployment: 100,
   washImplementation: [
     "Project Manager",
     "WASH Specialist",

@@ -99,11 +99,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             __html: `
               (function() {
                 try {
-                  var theme = localStorage.getItem('gtels-theme');
-                  if (theme) {
-                    document.documentElement.setAttribute('data-theme', theme);
-                  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                    document.documentElement.setAttribute('data-theme', 'night');
+                  // Ignore pre-reset theme values, clear them, and follow the
+                  // system unless the user saves a new choice via the toggle.
+                  localStorage.removeItem('gtels-theme');
+                  var stored = localStorage.getItem('gtels-theme-v2');
+                  if (stored === 'cupcake' || stored === 'night') {
+                    document.documentElement.setAttribute('data-theme', stored);
+                  } else {
+                    localStorage.removeItem('gtels-theme-v2');
+                    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                      document.documentElement.setAttribute('data-theme', 'night');
+                    }
                   }
                 } catch (e) {}
               })();

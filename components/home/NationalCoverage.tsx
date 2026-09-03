@@ -12,13 +12,13 @@ export default function NationalCoverage() {
         <SectionHeading
           eyebrow="National Coverage"
           title="Nationwide Implementation Capability"
-          description="8 zonal offices and 18 sub-offices ensure GTELS can deliver projects anywhere in Bangladesh."
+          description="8 field offices and 18 sub-offices ensure GTELS can deliver projects anywhere in Bangladesh."
         />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {zones.map((zone, i) => (
             <ScrollReveal key={zone.name} delay={i * 0.06}>
-              <div className="bg-base-200 rounded-xl p-5 border border-base-300/50 card-hover">
+              <div className="bg-base-200 rounded-xl p-5 border border-base-300 card-hover">
                 <div className="flex items-center gap-2 mb-3">
                   <MapPin className="w-4 h-4 text-primary" />
                   <h3 className="font-semibold text-sm">{zone.name}</h3>
@@ -32,7 +32,7 @@ export default function NationalCoverage() {
                     <span>Warehouse:</span>
                     <span className="font-medium text-base-content">{zone.warehouse}</span>
                   </div>
-                  <div className="pt-1 border-t border-base-300/50">
+                  <div className="pt-1 border-t border-base-300">
                     <span className="text-primary/80">{zone.coverage}</span>
                   </div>
                 </div>

@@ -50,8 +50,8 @@ export default function ClientsContent() {
               return (
                 <ScrollReveal key={client.id} delay={i * 0.06}>
                   <div className="bg-base-200 rounded-xl p-6 card-hover h-full flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                      <Icon className="w-5 h-5 text-primary" />
+                    <div className="w-10 h-10 rounded-lg bg-primary text-primary-content flex items-center justify-center shrink-0">
+                      <Icon className="w-5 h-5" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-sm">{client.name}</h3>

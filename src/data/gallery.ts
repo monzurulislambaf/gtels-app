@@ -18,28 +18,36 @@ export const galleryCategories = [
 ];
 
 export const galleryImages: GalleryImage[] = [
-  { id: "g1", src: "https://picsum.photos/seed/gtels-dtw1/800/600", alt: "Deep tubewell drilling operation", category: "wash" },
-  { id: "g2", src: "https://picsum.photos/seed/gtels-dtw2/800/600", alt: "Deep tubewell casing installation", category: "wash" },
-  { id: "g3", src: "https://picsum.photos/seed/gtels-htw1/800/600", alt: "Hand tubewell installation in rural area", category: "wash" },
-  { id: "g4", src: "https://picsum.photos/seed/gtels-sol1/800/600", alt: "Solar-powered water system", category: "solar" },
-  { id: "g5", src: "https://picsum.photos/seed/gtels-sol2/800/600", alt: "Solar deep tubewell installation", category: "solar" },
-  { id: "g6", src: "https://picsum.photos/seed/gtels-wat1/800/600", alt: "Water treatment facility", category: "wash" },
-  { id: "g7", src: "https://picsum.photos/seed/gtels-dew1/800/600", alt: "DEWATS facility construction", category: "wash" },
-  { id: "g8", src: "https://picsum.photos/seed/gtels-eq1/800/600", alt: "Drilling rig at project site", category: "equipment" },
-  { id: "g9", src: "https://picsum.photos/seed/gtels-eq2/800/600", alt: "Air compressor and pump equipment", category: "equipment" },
-  { id: "g10", src: "https://picsum.photos/seed/gtels-eq3/800/600", alt: "Concrete mixer at construction site", category: "equipment" },
-  { id: "g11", src: "https://picsum.photos/seed/gtels-fl1/800/600", alt: "GTELS fleet of pickup trucks", category: "fleet" },
-  { id: "g12", src: "https://picsum.photos/seed/gtels-fl2/800/600", alt: "Water tanker for field operations", category: "fleet" },
-  { id: "g13", src: "https://picsum.photos/seed/gtels-fl3/800/600", alt: "Material transport truck", category: "fleet" },
-  { id: "g14", src: "https://picsum.photos/seed/gtels-pr1/800/600", alt: "IOM deep tubewell project in Cox's Bazar", category: "projects" },
-  { id: "g15", src: "https://picsum.photos/seed/gtels-pr2/800/600", alt: "WASH infrastructure project implementation", category: "projects" },
-  { id: "g16", src: "https://picsum.photos/seed/gtels-pr3/800/600", alt: "World Vision hand tubewell project", category: "projects" },
-  { id: "g17", src: "https://picsum.photos/seed/gtels-sf1/800/600", alt: "Workers using personal protective equipment", category: "safety" },
-  { id: "g18", src: "https://picsum.photos/seed/gtels-sf2/800/600", alt: "Site safety briefing", category: "safety" },
-  { id: "g19", src: "https://picsum.photos/seed/gtels-lg1/800/600", alt: "Warehouse storage and inventory", category: "logistics" },
-  { id: "g20", src: "https://picsum.photos/seed/gtels-lg2/800/600", alt: "Last-mile delivery operation", category: "logistics" },
-  { id: "g21", src: "https://picsum.photos/seed/gtels-cn1/800/600", alt: "Civil construction works", category: "construction" },
-  { id: "g22", src: "https://picsum.photos/seed/gtels-cn2/800/600", alt: "Building construction progress", category: "construction" },
-  { id: "g23", src: "https://picsum.photos/seed/gtels-dtw3/800/600", alt: "Completed deep tubewell commissioning", category: "wash" },
-  { id: "g24", src: "https://picsum.photos/seed/gtels-eq4/800/600", alt: "Laser survey equipment in use", category: "equipment" },
+  // WASH
+  { id: "g1", src: "/images/gallery/g01.jpg", alt: "Deep tubewell drilling operation at project site", category: "wash" },
+  { id: "g2", src: "/images/gallery/g02.jpg", alt: "Casing pipes and installation materials for deep tubewell works", category: "wash" },
+  { id: "g3", src: "/images/gallery/g03.jpg", alt: "Community members collecting water from a tubewell", category: "wash" },
+  { id: "g4", src: "/images/gallery/g04.jpg", alt: "Community water infrastructure under integrated WASH project", category: "wash" },
+  { id: "g5", src: "/images/gallery/g05.jpg", alt: "Drinking-water treatment plant with filtration tanks", category: "wash" },
+  // Solar
+  { id: "g6", src: "/images/gallery/g06.jpg", alt: "Solar-powered community water supply system", category: "solar" },
+  { id: "g7", src: "/images/gallery/g07.jpg", alt: "Solar-powered reverse-osmosis water treatment plant", category: "solar" },
+  { id: "g8", src: "/images/gallery/g08.jpg", alt: "Installation of a solar water supply system", category: "solar" },
+  // Equipment
+  { id: "g9", src: "/images/gallery/g09.jpg", alt: "Drilling rig unit used for deep tubewell boring", category: "equipment" },
+  { id: "g10", src: "/images/gallery/g10.jpg", alt: "Air compressor and drilling support equipment", category: "equipment" },
+  { id: "g11", src: "/images/gallery/g11.jpg", alt: "Borehole drilling tools and bits", category: "equipment" },
+  { id: "g12", src: "/images/gallery/g12.jpg", alt: "Survey crew using laser/survey instruments on site", category: "equipment" },
+  // Fleet
+  { id: "g13", src: "/images/gallery/g13.jpg", alt: "Water tanker truck for field operations", category: "fleet" },
+  { id: "g14", src: "/images/gallery/g14.jpg", alt: "Cargo trucks at GTELS logistics yard", category: "fleet" },
+  { id: "g15", src: "/images/gallery/g15.jpg", alt: "Field transport vehicle for project deployment", category: "fleet" },
+  // Projects
+  { id: "g16", src: "/images/gallery/g16.jpg", alt: "Completed deep tubewell platform ready for handover", category: "projects" },
+  { id: "g17", src: "/images/gallery/g17.jpg", alt: "Site inspection during WASH project implementation", category: "projects" },
+  { id: "g18", src: "/images/gallery/g18.jpg", alt: "Project construction site with heavy machinery", category: "projects" },
+  // Safety
+  { id: "g19", src: "/images/gallery/g19.jpg", alt: "Personal protective equipment used on project sites", category: "safety" },
+  { id: "g20", src: "/images/gallery/g20.jpg", alt: "Road safety barriers and cones at work site", category: "safety" },
+  // Logistics
+  { id: "g21", src: "/images/gallery/g21.jpg", alt: "Warehouse and workshop facility with overhead crane", category: "logistics" },
+  { id: "g22", src: "/images/gallery/g22.jpg", alt: "Flatbed truck transporting excavator to project site", category: "logistics" },
+  // Construction
+  { id: "g23", src: "/images/gallery/g23.jpg", alt: "Building construction with scaffolding", category: "construction" },
+  { id: "g24", src: "/images/gallery/g24.jpg", alt: "Concrete mixing at construction site", category: "construction" },
 ];

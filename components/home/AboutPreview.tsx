@@ -47,18 +47,11 @@ export default function AboutPreview() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl img-zoom">
                 <img
-                  src="https://picsum.photos/seed/gtels-team-work/700/500"
-                  alt="GTELS team at project site"
+                  src="/images/about-preview.jpg"
+                  alt="GTELS project crew at a drilling site"
                   className="w-full h-[350px] lg:h-[420px] object-cover"
                 />
               </div>
-              {/* Floating stat card */}
-              <div className="absolute -bottom-6 -left-4 lg:-left-8 bg-primary text-primary-content rounded-xl p-5 shadow-xl">
-                <div className="text-3xl font-bold">BDT 112M+</div>
-                <div className="text-sm text-primary-content/80">Project Value Implemented</div>
-              </div>
-              {/* Floating accent */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-accent/20 rounded-2xl" />
             </div>
           </ScrollReveal>
         </div>

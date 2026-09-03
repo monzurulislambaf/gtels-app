@@ -27,7 +27,7 @@ export default function LocationsContent() {
               Office <span className="text-primary">Locations</span>
             </h1>
             <p className="text-lg text-neutral-content/70 max-w-2xl">
-              Headquartered in Dhaka with 8 zonal offices and 18 sub-offices across Bangladesh.
+              Headquartered in Dhaka with 8 field offices and 18 sub-offices across Bangladesh.
             </p>
           </motion.div>
         </div>
@@ -52,7 +52,7 @@ export default function LocationsContent() {
       <section className="pb-20 lg:pb-28">
         <div className="max-w-7xl mx-auto px-4">
           <SectionHeading
-            eyebrow="Zonal & Sub-Offices"
+            eyebrow="Field & Sub-Offices"
             title="Nationwide Office Network"
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -70,7 +70,7 @@ export default function LocationsContent() {
                         <div key={office.id} className="flex items-start gap-3">
                           <div className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${
                             office.type === "head-office" ? "bg-primary" :
-                            office.type === "zonal" ? "bg-info" : "bg-base-content/30"
+                            office.type === "zonal" ? "bg-info" : "bg-base-content"
                           }`} />
                           <div>
                             <div className="text-sm font-medium">{office.address}</div>
@@ -78,7 +78,7 @@ export default function LocationsContent() {
                               office.type === "head-office" ? "badge-primary" :
                               office.type === "zonal" ? "badge-info" : "badge-ghost"
                             }`}>
-                              {office.type.replace("-", " ")}
+                              {office.type === "head-office" ? "Head Office" : office.type === "zonal" ? "Field Office" : "Sub-Office"}
                             </span>
                           </div>
                         </div>

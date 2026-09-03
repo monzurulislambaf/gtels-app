@@ -313,19 +313,15 @@ Create animated statistics based only on source information.
 
 Examples:
 
-### 55,000+
+### 30,000+
 
 Sq. Ft. Warehouse Capacity
 
 ### 8
 
-Zonal Offices
+Field Offices
 
-### 18
-
-Sub-Offices
-
-### 241
+### 100
 
 Approx. Deployment Personnel
 
@@ -333,11 +329,11 @@ Approx. Deployment Personnel
 
 Equipment Categories
 
-### BDT 112.18M
+### BDT 180+
 
 Project Value Implemented in Last 4 Years
 
-### 190+
+### 1000+
 
 Recent Tube Wells
 
@@ -670,7 +666,7 @@ Sections:
 
 ### National Coverage
 
-8 zonal offices.
+8 field offices.
 
 18 sub-offices.
 
@@ -678,7 +674,7 @@ Bangladesh-wide implementation capability.
 
 ### Warehousing
 
-55,000+ sq. ft. total stated capacity.
+30,000+ sq. ft. total stated capacity.
 
 Show the 8 warehouse zones in cards/table:
 
@@ -885,7 +881,7 @@ Create workforce statistics:
 * Store/warehouse keepers: 8
 * Drivers/transport operators: 17
 * Skilled/general labour: 93
-* Approximate deployment: 241
+* Approximate deployment: 100
 
 Use exact source wording.
 
@@ -1707,11 +1703,11 @@ Engineering + WASH + procurement + logistics.
 
 ### Logistics Strength
 
-55,000+ sq. ft. stated warehouse capacity.
+30,000+ sq. ft. stated warehouse capacity.
 
 ### Technical Workforce
 
-Approx. 241 personnel deployment capacity.
+Approx. 100 personnel deployment capacity.
 
 ### Relevant WASH Experience
 

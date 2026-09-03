@@ -29,7 +29,7 @@ export default function ProjectsContent() {
       <section className="relative bg-neutral text-neutral-content py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://picsum.photos/seed/gtels-proj-hero/1920/600"
+            src="/images/hero-projects.jpg"
             alt="GTELS project implementation"
             className="w-full h-full object-cover opacity-20"
           />
@@ -58,7 +58,7 @@ export default function ProjectsContent() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {[
-              { value: 112, suffix: ".18M", label: "BDT Total Value" },
+              { value: 180, suffix: "+", label: "BDT Total Value" },
               { value: 8, suffix: "", label: "Projects" },
               { value: 150, suffix: "+", label: "Deep Tubewells" },
               { value: 30, suffix: "+", label: "Hand Tubewells" },
@@ -119,10 +119,10 @@ export default function ProjectsContent() {
             {filtered.map((project, i) => (
               <ScrollReveal key={project.id} delay={i * 0.08}>
                 <Link href={`/projects/${project.slug}`} className="block h-full">
-                  <div className="card bg-base-100 shadow-sm border border-base-300/50 card-hover h-full group">
+                  <div className="card bg-base-100 shadow-sm border border-base-300 card-hover h-full group">
                     <figure className="relative h-48 overflow-hidden">
                       <img
-                        src={`https://picsum.photos/seed/gtels-p-${project.id}/500/300`}
+                        src={project.image}
                         alt={project.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
@@ -145,7 +145,7 @@ export default function ProjectsContent() {
                       <h3 className="card-title text-base leading-snug">{project.title}</h3>
                       <p className="text-sm text-base-content/60">{project.client}</p>
                       <p className="text-xs text-base-content/50 mt-1 line-clamp-2">{project.description}</p>
-                      <div className="flex items-center justify-between mt-3 pt-3 border-t border-base-300/50">
+                      <div className="flex items-center justify-between mt-3 pt-3 border-t border-base-300">
                         <div className="flex items-center gap-3 text-xs text-base-content/50">
                           <span>{project.year}</span>
                           {project.contractValue && (

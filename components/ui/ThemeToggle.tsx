@@ -9,12 +9,15 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     setMounted(true);
-    // Check saved preference or system preference
-    const saved = localStorage.getItem("gtels-theme");
-    if (saved) {
+    // Ignore any pre-reset theme value, then follow the user's saved choice
+    // only if they set it explicitly; otherwise follow the system preference.
+    localStorage.removeItem("gtels-theme");
+    const saved = localStorage.getItem("gtels-theme-v2");
+    if (saved === "cupcake" || saved === "night") {
       setIsDark(saved === "night");
       document.documentElement.setAttribute("data-theme", saved);
     } else {
+      localStorage.removeItem("gtels-theme-v2");
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
       setIsDark(prefersDark);
       document.documentElement.setAttribute("data-theme", prefersDark ? "night" : "cupcake");
@@ -25,7 +28,7 @@ export default function ThemeToggle() {
     const newTheme = isDark ? "cupcake" : "night";
     setIsDark(!isDark);
     document.documentElement.setAttribute("data-theme", newTheme);
-    localStorage.setItem("gtels-theme", newTheme);
+    localStorage.setItem("gtels-theme-v2", newTheme);
   };
 
   // Prevent hydration mismatch

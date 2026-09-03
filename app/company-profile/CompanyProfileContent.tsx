@@ -21,7 +21,7 @@ const sections = [
   { num: "04", title: "Geographic Reach", desc: "8 zones, 18 sub-offices nationwide" },
   { num: "05", title: "WASH & Deep Tubewell Capability", desc: "Technical WASH delivery capability" },
   { num: "06", title: "Project Experience", desc: "Documented WASH and engineering projects" },
-  { num: "07", title: "Manpower", desc: "241+ skilled personnel" },
+  { num: "07", title: "Manpower", desc: "100+ skilled personnel" },
   { num: "08", title: "Equipment & Resources", desc: "24+ equipment categories" },
   { num: "09", title: "Quality, HSE & Compliance", desc: "ISO standards and compliance policies" },
 ];
@@ -42,7 +42,7 @@ export default function CompanyProfileContent() {
               Company Profile
             </span>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">
-              {company.acronym} <span className="text-primary">Profile</span>
+              {company.shortName} <span className="text-primary">Profile</span>
             </h1>
             <p className="text-lg text-neutral-content/70 max-w-2xl">
               A comprehensive overview of GlobalTech Engineering & Logistic Solutions.
@@ -58,7 +58,7 @@ export default function CompanyProfileContent() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {sections.map((s, i) => (
               <ScrollReveal key={s.num} delay={i * 0.05}>
-                <div className="bg-base-100 rounded-xl p-5 card-hover border border-base-300/50">
+                <div className="bg-base-100 rounded-xl p-5 card-hover border border-base-300">
                   <span className="text-xs font-bold text-primary">{s.num}</span>
                   <h3 className="font-semibold text-sm mt-1">{s.title}</h3>
                   <p className="text-xs text-base-content/50 mt-1">{s.desc}</p>
@@ -75,10 +75,10 @@ export default function CompanyProfileContent() {
           <SectionHeading eyebrow="01" title="Company at a Glance" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
             {[
-              { value: 55000, suffix: "+", label: "Sq. Ft. Warehouse" },
-              { value: 8, suffix: "", label: "Zonal Offices" },
-              { value: 241, suffix: "+", label: "Personnel" },
-              { value: 190, suffix: "+", label: "Tube Wells" },
+              { value: 30000, suffix: "+", label: "Sq. Ft. Warehouse" },
+              { value: 8, suffix: "", label: "Field Offices" },
+              { value: 100, suffix: "+", label: "Personnel" },
+              { value: 1000, suffix: "+", label: "Tube Wells" },
             ].map((stat, i) => (
               <ScrollReveal key={stat.label} delay={i * 0.08}>
                 <div className="text-center p-4 bg-base-200 rounded-xl">
@@ -179,6 +179,6 @@ export default function CompanyProfileContent() {
 }
 
 const projectStats = {
-  totalValue: "BDT 112.18M",
+  totalValue: "BDT 180+",
   totalProjects: 8,
 };

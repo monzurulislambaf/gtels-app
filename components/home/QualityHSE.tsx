@@ -10,22 +10,22 @@ const items = [
     icon: ShieldCheck,
     title: "Quality Management",
     status: "ISO 9001:2015 — On process",
-    color: "text-primary",
-    bg: "bg-primary/10",
+    color: "text-primary-content",
+    bg: "bg-primary",
   },
   {
     icon: Leaf,
     title: "Environmental Management",
     status: "ISO 14001:2015 — On process",
-    color: "text-accent",
-    bg: "bg-accent/10",
+    color: "text-accent-content",
+    bg: "bg-accent",
   },
   {
     icon: HeartPulse,
     title: "Occupational Health & Safety",
     status: "OHSAS 18001:2007 — On process",
-    color: "text-secondary",
-    bg: "bg-secondary/10",
+    color: "text-secondary-content",
+    bg: "bg-secondary",
   },
 ];
 
@@ -44,7 +44,7 @@ export default function QualityHSE() {
             const Icon = item.icon;
             return (
               <ScrollReveal key={item.title} delay={i * 0.1}>
-                <div className="bg-base-100 rounded-xl p-6 border border-base-300/50 text-center card-hover h-full">
+                <div className="bg-base-100 rounded-xl p-6 border border-base-300 text-center card-hover h-full">
                   <div className={`w-14 h-14 rounded-xl ${item.bg} flex items-center justify-center mx-auto mb-4`}>
                     <Icon className={`w-7 h-7 ${item.color}`} />
                   </div>

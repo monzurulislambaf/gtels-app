@@ -57,19 +57,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Company */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-primary-content font-bold text-lg">
-                G
+            <div className="flex items-center gap-2.5">
+              <div className="h-10 px-2 rounded-lg bg-primary flex items-center justify-center text-primary-content font-extrabold text-[10px] tracking-tight">
+                {company.acronym}
               </div>
               <div>
-                <div className="font-bold text-lg">{company.acronym}</div>
+                <div className="font-bold text-lg leading-tight">{company.shortName}</div>
                 <div className="text-xs text-neutral-content/60 leading-tight">Engineering & Logistic Solutions</div>
               </div>
             </div>
             <p className="text-sm text-neutral-content/70 leading-relaxed">
               {company.description}
             </p>
-            <p className="text-xs text-neutral-content/50 pt-2 border-t border-neutral-content/10">
+            <p className="text-xs text-neutral-content/50 pt-2 border-t border-neutral-content/30">
               Engineering • WASH • Logistics • Infrastructure
             </p>
           </div>
@@ -124,7 +124,7 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="border-t border-neutral-content/10">
+      <div className="border-t border-neutral-content/30">
         <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-neutral-content/50">
           <span>&copy; {new Date().getFullYear()} {company.name}. All rights reserved.</span>
           <span>Engineering • WASH • Infrastructure • Logistics</span>

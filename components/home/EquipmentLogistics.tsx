@@ -23,11 +23,11 @@ export default function EquipmentLogistics() {
         <div className="grid md:grid-cols-2 gap-6">
           {/* Equipment */}
           <ScrollReveal direction="left">
-            <div className="card bg-base-100 shadow-sm border border-base-300/50 h-full">
+            <div className="card bg-base-100 shadow-sm border border-base-300 h-full">
               <div className="card-body p-6 lg:p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <Wrench className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-xl bg-primary text-primary-content flex items-center justify-center">
+                    <Wrench className="w-6 h-6" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Equipment</h3>
@@ -53,11 +53,11 @@ export default function EquipmentLogistics() {
 
           {/* Fleet */}
           <ScrollReveal direction="right">
-            <div className="card bg-base-100 shadow-sm border border-base-300/50 h-full">
+            <div className="card bg-base-100 shadow-sm border border-base-300 h-full">
               <div className="card-body p-6 lg:p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
-                    <Truck className="w-6 h-6 text-accent" />
+                  <div className="w-12 h-12 rounded-xl bg-accent text-accent-content flex items-center justify-center">
+                    <Truck className="w-6 h-6" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Fleet</h3>
