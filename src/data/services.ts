@@ -29,6 +29,8 @@ export const services: Service[] = [
     icon: Hammer,
     capabilities: [
       "Building construction and renovation",
+      "RO water treatment plant",
+      "Solar Powered RO Water Treatment plant",
       "Water-supply infrastructure",
       "Sanitation infrastructure",
       "Material procurement and supply",
