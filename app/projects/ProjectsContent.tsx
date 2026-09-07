@@ -59,7 +59,7 @@ export default function ProjectsContent() {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {[
               { value: 180, suffix: "+", label: "BDT Total Value" },
-              { value: 8, suffix: "", label: "Projects" },
+              { value: projectStats.totalProjects, suffix: "", label: "Projects" },
               { value: 150, suffix: "+", label: "Deep Tubewells" },
               { value: 30, suffix: "+", label: "Hand Tubewells" },
               { value: 3, suffix: "", label: "DEWATS Facilities" },
@@ -146,15 +146,15 @@ export default function ProjectsContent() {
                       <p className="text-sm text-base-content/60">{project.client}</p>
                       <p className="text-xs text-base-content/50 mt-1 line-clamp-2">{project.description}</p>
                       <div className="flex items-center justify-between mt-3 pt-3 border-t border-base-300">
-                        <div className="flex items-center gap-3 text-xs text-base-content/50">
-                          <span>{project.year}</span>
-                          {project.contractValue && (
-                            <>
-                              <span>•</span>
+                        {(project.year || project.contractValue) && (
+                          <div className="flex items-center gap-3 text-xs text-base-content/50">
+                            {project.year && <span>{project.year}</span>}
+                            {project.year && project.contractValue && <span>•</span>}
+                            {project.contractValue && (
                               <span className="font-medium text-primary">{project.contractValue}</span>
-                            </>
-                          )}
-                        </div>
+                            )}
+                          </div>
+                        )}
                         <ExternalLink className="w-4 h-4 text-base-content/30 group-hover:text-primary transition-colors" />
                       </div>
                     </div>

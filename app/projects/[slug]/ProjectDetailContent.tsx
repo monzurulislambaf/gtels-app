@@ -41,7 +41,9 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{project.title}</h1>
             <div className="flex flex-wrap items-center gap-4 text-sm text-primary-content/70">
               <span className="flex items-center gap-1.5"><Building2 className="w-4 h-4" />{project.client}</span>
-              <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" />{project.year}</span>
+              {project.year && (
+                <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" />{project.year}</span>
+              )}
               {project.location && <span className="flex items-center gap-1.5"><MapPin className="w-4 h-4" />{project.location}</span>}
               {project.contractValue && <span className="font-semibold text-accent">{project.contractValue}</span>}
             </div>
@@ -86,7 +88,7 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
               </div>
               <div className="bg-base-200 rounded-xl p-5 text-center">
                 <div className="text-sm text-base-content/60">Year</div>
-                <div className="font-semibold mt-1">{project.year}</div>
+                <div className="font-semibold mt-1">{project.year ?? "Information to be updated"}</div>
               </div>
               <div className="bg-base-200 rounded-xl p-5 text-center">
                 <div className="text-sm text-base-content/60">Contract Value</div>
@@ -103,7 +105,7 @@ export default function ProjectDetailContent({ project }: { project: Project }) 
                 <Link key={p.id} href={`/projects/${p.slug}`} className="block">
                   <div className="bg-base-200 rounded-xl p-4 card-hover">
                     <h4 className="font-semibold text-sm mb-1">{p.title}</h4>
-                    <p className="text-xs text-base-content/50">{p.client} • {p.year}</p>
+                    <p className="text-xs text-base-content/50">{p.year ? `${p.client} • ${p.year}` : p.client}</p>
                   </div>
                 </Link>
               ))}

@@ -37,7 +37,7 @@ export default async function ProjectDetailPage({ params }: Props) {
         title={project.title}
         description={project.description || `${project.title} — GTELS project`}
         client={project.client}
-        datePublished={String(project.year)}
+        datePublished={project.year ? String(project.year) : undefined}
         path={`/projects/${project.slug}`}
       />
       <ProjectDetailContent project={project} />

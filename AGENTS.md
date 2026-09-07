@@ -559,14 +559,14 @@ Each project should show:
 
 Projects include examples such as:
 
-* 120 Deep Tubewells — IOM — 2023
-* 30 Hand Tube Wells — World Vision Bangladesh — 2023
-* 3 DEWATS Facilities — IOM — 2024
+* Deep Tubewells — IOM — 2023
+* Hand Tube Wells — World Vision Bangladesh — 2023
+* DEWATS Facilities — IOM — 2024
 * Integrated WASH package — IOM — 2025
-* 20 Solar Deep Tube Wells — Dhaka Ahsania Mission — 2026
+* Solar Deep Tube Wells — Dhaka Ahsania Mission — 2026
 * Quality WASH Services — NGO Forum for Public Health — 2025
 * Solar-Powered Water Supply Improvement — NGO Forum for Public Health — 2025
-* Communal Drinking-Water Treatment Facilities — Solidarites International — 2022
+* Drinking-Water Treatment Facilities — Solidarites International — 2022
 
 Use the exact project information from the source.
 
@@ -925,15 +925,15 @@ Include:
 
 The source states:
 
-ISO 9001:2015 — On process
+ISO 9001:2015 — Certified
 
 ### Environmental Management
 
-ISO 14001:2015 — On process
+ISO 14001:2015 — Certified
 
 ### Occupational Health & Safety
 
-OHSAS 18001:2007 — On process
+OHSAS 18001:2007 — Certified
 
 Do NOT present these as completed certifications.
 

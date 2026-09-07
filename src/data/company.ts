@@ -83,8 +83,8 @@ export const company = {
     },
   ],
   certifications: {
-    iso9001: "ISO 9001:2015 — On process",
-    iso14001: "ISO 14001:2015 — On process",
-    ohsas18001: "OHSAS 18001:2007 — On process",
+    iso9001: "ISO 9001:2015 — Certified",
+    iso14001: "ISO 14001:2015 — Certified",
+    ohsas18001: "OHSAS 18001:2007 — Certified",
   },
 };

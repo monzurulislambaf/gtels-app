@@ -4,7 +4,7 @@ export interface Project {
   title: string;
   image: string;
   client: string;
-  year: number;
+  year?: number;
   contractValue?: string;
   reference?: string;
   projectType: string;
@@ -19,7 +19,7 @@ export const projects: Project[] = [
   {
     id: "p1",
     slug: "120-deep-tubewells-iom-2023",
-    title: "120 Deep Tubewells",
+    title: "Deep Tubewells",
     image: "/images/projects/p1.jpg",
     client: "IOM (International Organization for Migration)",
     year: 2023,
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     projectType: "WASH Infrastructure",
     location: "Cox's Bazar, Bangladesh",
     description:
-      "Drilling, installation, and commissioning of 120 deep tubewells to provide safe drinking water for displaced communities in Cox's Bazar.",
+      "Drilling, installation, and commissioning of Deep Tubewells to provide safe drinking water for displaced communities in Cox's Bazar.",
     scope: [
       "Site assessment and hydrogeological survey",
       "Drilling and boring operations",
@@ -42,7 +42,7 @@ export const projects: Project[] = [
   {
     id: "p2",
     slug: "30-hand-tube-wells-world-vision-2023",
-    title: "30 Hand Tube Wells",
+    title: "Hand Tube Wells",
     image: "/images/projects/p2.jpg",
     client: "World Vision Bangladesh",
     year: 2023,
@@ -63,7 +63,7 @@ export const projects: Project[] = [
   {
     id: "p3",
     slug: "3-dewats-iom-2024",
-    title: "3 DEWATS Facilities",
+    title: "DEWATS Facilities",
     image: "/images/projects/p3.jpg",
     client: "IOM (International Organization for Migration)",
     year: 2024,
@@ -105,7 +105,7 @@ export const projects: Project[] = [
   {
     id: "p5",
     slug: "20-solar-deep-tube-wells-dam-2026",
-    title: "20 Solar Deep Tube Wells",
+    title: "Solar Deep Tube Wells",
     image: "/images/projects/p5.jpg",
     client: "Dhaka Ahsania Mission",
     year: 2026,
@@ -168,14 +168,14 @@ export const projects: Project[] = [
   {
     id: "p8",
     slug: "communal-drinking-water-solidarites-2022",
-    title: "Communal Drinking-Water Treatment Facilities",
+    title: "Drinking-Water Treatment Facilities",
     image: "/images/projects/p8.jpg",
     client: "Solidarites International",
     year: 2022,
     projectType: "Water Treatment",
     location: "Cox's Bazar, Bangladesh",
     description:
-      "Construction and commissioning of communal drinking-water treatment facilities for displaced populations.",
+      "Construction and commissioning of Drinking-Water Treatment Facilities for displaced populations.",
     scope: [
       "Water treatment facility design",
       "Civil construction works",
@@ -186,16 +186,54 @@ export const projects: Project[] = [
     status: "completed",
     category: "water-treatment",
   },
+  {
+    id: "p9",
+    slug: "ro-water-treatment-plant",
+    title: "RO Water Treatment Plant",
+    image: "/images/projects/p9.jpg",
+    client: "Information to be updated",
+    projectType: "Water Treatment",
+    description:
+      "Supply, installation, and commissioning of reverse-osmosis (RO) water treatment plants producing safe drinking water, including water-quality testing and handover.",
+    scope: [
+      "Plant siting and civil/platform works",
+      "RO unit and filtration system installation",
+      "Pump and electrical connections",
+      "Water-quality testing",
+      "Commissioning, operator training, and handover",
+    ],
+    status: "completed",
+    category: "water-treatment",
+  },
+  {
+    id: "p10",
+    slug: "solar-powered-ro-water-treatment-plant",
+    title: "Solar Powered RO Water Treatment Plant",
+    image: "/images/projects/p10.jpg",
+    client: "Information to be updated",
+    projectType: "Solar WASH",
+    description:
+      "Solar-powered reverse-osmosis water treatment plant combining RO treatment with a photovoltaic power supply for sustainable, off-grid safe drinking-water production.",
+    scope: [
+      "Solar array design and installation",
+      "RO treatment unit installation",
+      "Solar pump and electrical integration",
+      "Water-quality testing",
+      "Commissioning, O&M training, and handover",
+    ],
+    status: "completed",
+    category: "solar",
+  },
 ];
 
 export const projectStats = {
   totalValue: "BDT 180+",
-  totalProjects: 8,
+  totalProjects: 10,
   deepTubewells: 150,
   handTubewells: 30,
   dewatsFacilities: 3,
   solarProjects: 2,
-  waterTreatment: 1,
+  waterTreatment: 2,
   years: [2022, 2023, 2024, 2025, 2026],
   clientCategories: ["International Organizations", "NGOs", "Development Partners"],
 };

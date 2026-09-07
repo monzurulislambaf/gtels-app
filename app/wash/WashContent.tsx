@@ -11,7 +11,7 @@ const capabilities = [
   { title: "Hand Tubewell Installation", desc: "Community-level hand tubewell systems for rural water supply." },
   { title: "Solar Deep Tubewells", desc: "Solar-powered pumping systems for sustainable, off-grid water supply." },
   { title: "Water-Quality Testing", desc: "Laboratory-approved water sampling and testing for safe drinking water." },
-  { title: "Water Treatment", desc: "Communal drinking-water treatment facilities and purification systems." },
+  { title: "Water Treatment", desc: "Drinking-Water Treatment Facilities and purification systems." },
   { title: "DEWATS", desc: "Decentralized Wastewater Treatment Systems for sustainable sanitation." },
   { title: "Sanitation Infrastructure", desc: "Bathing facilities, latrines, and community sanitation systems." },
   { title: "Community WASH", desc: "Hygiene promotion, community engagement, and capacity building." },

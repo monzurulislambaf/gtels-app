@@ -111,7 +111,7 @@ interface ProjectSchemaProps {
   title: string;
   description: string;
   client: string;
-  datePublished: string;
+  datePublished?: string;
   path: string;
 }
 
@@ -135,7 +135,7 @@ export function ProjectSchema({
       "@type": "Organization",
       name: "GTELS",
     },
-    datePublished,
+    ...(datePublished ? { datePublished } : {}),
     url: `https://gtels-bd.com${path}`,
     about: {
       "@type": "Organization",

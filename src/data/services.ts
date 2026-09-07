@@ -29,8 +29,6 @@ export const services: Service[] = [
     icon: Hammer,
     capabilities: [
       "Building construction and renovation",
-      "RO water treatment plant",
-      "Solar Powered RO Water Treatment plant",
       "Water-supply infrastructure",
       "Sanitation infrastructure",
       "Material procurement and supply",
@@ -49,6 +47,8 @@ export const services: Service[] = [
       "GTELS has extensive experience in WASH (Water, Sanitation & Hygiene) infrastructure delivery, including deep tubewell drilling, hand tubewell installation, solar-powered water systems, water-quality testing, treatment facilities, DEWATS, and community WASH programs.",
     icon: Droplets,
     capabilities: [
+      "RO water treatment plant",
+      "Solar Powered RO Water Treatment plant",
       "Deep tubewell drilling",
       "Hand tubewell installation",
       "Solar deep tubewells",
